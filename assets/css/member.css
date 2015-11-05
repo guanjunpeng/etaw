@@ -1,0 +1,661 @@
+.infoBox {
+    width: 1000px;
+    min-height: 100px;
+    margin: 0 auto 50px auto;
+}
+.infoBox .leftInfo {
+    width: 702px;
+    height: 750px;
+    border: 1px solid #e5e9ea;
+    float: left;
+}
+.infoBox .rightInfo {
+    width: 288px;
+    height: 750px;
+    border: 1px solid #e5e9ea;
+    float: right;
+}
+.infoBox .rightInfo.hideLine {
+    border: none;
+}
+.rightInfo .updated {
+    width: 288px;
+    height: 400px;
+    border: 1px solid #e5e9ea;
+    margin-bottom: 10px;
+}
+.rightInfo .ranking {
+    width: 288px;
+    height: 340px;
+    border: 1px solid #e5e9ea;
+}
+
+.infoTitle {
+    width: 100%;
+    height: 34px;
+    position: relative;
+}
+.infoTitle .allTitle {
+    display: inline-block;
+    width: 707px;
+    height: 34px;
+    line-height: 28px;
+    background: url("../img/icon_bg_blue_all.png") no-repeat;
+    color: #FFFFFF;
+    font-size: 16px;
+    text-indent: 24px;
+    position: absolute;
+    top: 0;
+    left: -7px;
+}
+.infoTitle .sortTitle {
+    display: inline-block;
+    width: 100%;
+    height: 34px;
+    line-height: 28px;
+    background: url("../img/icon_bg_blue.png") no-repeat;
+    color: #FFFFFF;
+    font-size: 16px;
+    text-indent: 24px;
+    position: absolute;
+    top: 0;
+    left: -7px;
+}
+.leftInfo .processToolBar {
+    margin: 20px 0 30px 0;
+    padding: 0;
+    width: 100%;
+}
+.processToolBar li {
+    width: 175px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #1d8ede;
+    background: url("../img/icon_toolbar_bg_white.png") no-repeat center;
+    background-size: contain;
+    float: left;
+}
+.processToolBar li.complete {
+    color: #ffffff;
+    background: url("../img/icon_toolbar_bg_blue.png") no-repeat center;
+    background-size: contain;
+}
+
+.leftInfo .memberList {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.memberList li {
+    width: 600px;
+    height: 40px;
+    margin: 0 50px;
+}
+.memberList li:after {
+    content: '';
+    visibility: hidden;
+    height: 0;
+    display: block;
+    clear: both;
+}
+.memberList li > span {
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 10px;
+    text-align: right;
+    float: left;
+}
+.memberList li > input {
+    width: 310px;
+    height: 30px;
+    padding: 0 5px;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-right: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 0;
+    color: #706f6e;
+    float: left;
+}
+.memberList li.codeLi > input {
+    width: 150px;
+}
+.memberList li.codeLi > input:first-child {
+    margin-right: 10px;
+}
+.memberList li > label {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: #b4b4b4;
+    margin: 0 10px 0 0;
+    line-height: 40px;
+    cursor: pointer;
+}
+.memberList li > label input {
+    margin-right: 4px;
+    border-color: #b4b4b4;
+    position: relative;
+    top: 2px;
+}
+.leftInfo  .btn-submit {
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 130px;
+}
+
+
+.cList {
+    width: 288px;
+    margin: 0 auto 10px auto;
+    padding: 0;
+}
+.cList li {
+    cursor: pointer;
+    width: 272px;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 30px;
+    text-indent: 10px;
+    border-bottom: 1px dashed #e5e9ea;
+    background: url("../img/icon_point_blue.jpg") no-repeat 0 center;
+}
+.cList li:after {
+    content: '';
+    visibility: hidden;
+    height: 0;
+    display: block;
+    clear: both;
+}
+.cList li:last-child {
+    border: none;
+}
+.cList li span.listInfo {
+    display: inline-block;
+    width: 220px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    *white-space: nowrap;
+    overflow: hidden;
+    float: left;
+}
+.cList li span.listDate {
+    display: inline-block;
+    width: 40px;
+    color: #b1b1b1;
+    text-align: right;
+    float: right;
+}
+
+.rankingList li {
+    text-indent: 0;
+    background: none;
+}
+.rankingList li em {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-top: 5px;
+    margin-right: 5px;
+    background-color: #348ddf;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-size: 8px;
+    -webkit-transform: scale(0.75);
+    -o-transform: scale(1);
+    line-height: 16px;
+    text-align: center;
+    font-style: normal;
+}
+.rankingList li:first-child em,
+.rankingList li:nth-child(2) em,
+.rankingList li:nth-child(3) em {
+    background: #6eaff0;
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(#97cdfb), to(#2f82de));
+    background:-moz-linear-gradient(top, #97cdfb,#2f82de);
+}
+.rankingList li span.listInfo {
+     width: 200px;
+}
+.rankingList li span.listDate {
+    width: 50px;
+}
+
+
+.leftInfo .unitList {
+    width: 682px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    border-bottom: 1px dashed #e5e9ea;
+}
+.leftInfo .unitList:after,
+.unitList p:after {
+    content: '';
+    visibility: hidden;
+    height: 0;
+    display: block;
+    clear: both;
+}
+.leftInfo .unitList:last-child {
+    margin-bottom: 40px;
+}
+.leftInfo .queryBox {
+    width: 682px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    border: none;
+}
+.unitList p {
+    margin: 0;
+    font-size: 14px;
+}
+/*.unitList span {*/
+    /*display: inline-block;*/
+    /*height: 50px;*/
+    /*line-height: 50px;*/
+/*}*/
+.queryBox .areaQuery {
+    width: 300px;
+    float: left;
+}
+.queryBox .unitQuery {
+    width: 380px;
+    float: right;
+}
+.queryBox > span,
+.queryBox span.queryTitle,
+.queryBox > select,
+.queryBox input,
+.queryBox .btn-select {
+    display: inline-block;
+    float: left;
+}
+.queryBox > span {
+    padding: 0 4px;
+}
+.queryBox span.queryTitle {
+    width: 60px;
+    margin-right: 5px;
+    padding: 0;
+    text-align: right;
+}
+
+.queryBox input {
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    padding: 0 5px;
+}
+.queryBox .btn-select {
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    margin: 10px 0 0 20px;
+}
+
+.unitList .unitInfo {
+    width: 300px;
+    float: left;
+}
+.unitList .addressInfo {
+    width: 380px;
+    float: right;
+}
+.unitList .unitInfo span,
+.unitList .addressInfo span {
+    width: 60px;
+    margin-right: 5px;
+    padding: 0;
+    text-align: right;
+}
+.unitList .unitInfo {
+    font-weight: bolder;
+}
+
+.leftInfo .pageBox {
+    width: 682px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+}
+.leftInfo .pageBox.marginTop {
+    margin-top: 40px;
+}
+.pageBox .pageDetails {
+    float: left;
+    width: 380px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+}
+.pageBox .pageDetails span {
+    padding: 0 2px;
+}
+.pageBox .pageToolBar {
+    float: right;
+    width: 240px;
+    height: 50px;
+    margin-right: 20px;
+    line-height: 50px;
+}
+.pageToolBar p {
+    margin: 0;
+    float: right;
+    font-size: 14px;
+}
+.pageToolBar input {
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 15px;
+    border: 1px solid #1d8ede;
+    padding: 0 5px;
+    font-size: 12px;
+    float: right;
+}
+.pageToolBar p span.pageBack,
+.pageToolBar p span.pageNext {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 15px 5px 5px 5px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.pageToolBar p span.pageJump {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin: 15px 0 5px 5px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.rightInfo .addressList {
+    width: 248px;
+    margin-left: 20px;
+}
+.addressList span {
+    display: inline-block;
+    width: 80px;
+    height: 36px;
+    padding-left: 12px;
+    color: #6a6a6a;
+    font-size: 12px;
+    line-height: 36px;
+    background: url("../img/icon_point_black.png") no-repeat 0 center;
+}
+
+.leftInfo .listBox {
+    width: 680px;
+    margin: 0 auto 20px auto;
+    padding: 0;
+}
+.listBox li {
+    width: 680px;
+    border-bottom: 1px dashed #e5e9ea;
+}
+.listBox li p.p-top {
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    background: url("../img/icon_point_blue.jpg") no-repeat 0 center;
+    color: #1d8ede;
+    text-indent: 10px;
+}
+.listBox li p.p-bottom {
+    min-height: 24px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #b1b1b1;
+}
+
+.detailsBox {
+    width: 600px;
+    margin: 0 auto;
+}
+.detailsBox .detailTitle {
+    width: 100px;
+    height: 30px;
+    margin: 20px 0;
+    background-color: #1d8ede;
+    color: #FFFFFF;
+    line-height: 30px;
+    text-align: center;
+}
+.detailsBox .detailList {
+    width: 600px;
+    min-height: 34px;
+    font-weight: bolder;
+    line-height: 34px;
+}
+.detailsBox .detailList:after {
+    content: '';
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+/*.detailList .dl-left {*/
+    /*float: left;*/
+    /*width: 60px;*/
+    /*height: 30px;*/
+/*}*/
+.detailList .dl-right {
+    float: left;
+    width: 500px;
+}
+.detailList .dl-right p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: initial;
+}
+.detailList > span.colon {
+    float: left;
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+}
+.detailList .dl-left {
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    float: left;
+    overflow: hidden;
+    text-align: justify;
+    text-align-last: justify;
+}
+.detailList .dl-left:after {
+    display: inline-block;
+    content: '';
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+}
+.infoBox.memberSchool {
+    height: 625px;
+}
+.infoBox.memberSchool .leftInfo,
+.infoBox.memberSchool .rightInfo {
+    height: 625px;
+}
+
+
+
+
+
+
+
+.infoBox.familyBox {
+    height: 584px;
+}
+.infoBox.familyBox .leftInfo,
+.infoBox.familyBox .rightInfo {
+    height: 584px;
+}
+.leftInfo .userBox,
+.leftInfo .userDeeds {
+    width: 500px;
+    margin: 0 auto;
+}
+.leftInfo .userBox {
+    margin-top: 50px;
+}
+.leftInfo .userDeeds {
+    margin-top: 30px;
+}
+.userBox img {
+    float: left;
+    width: 150px;
+    height: 150px;
+}
+.userBox .userInfo {
+    float: right;
+    width: 300px;
+    height: 150px;
+}
+.userBox .userInfo p {
+    height: 35px;
+    line-height: 35px;
+    margin: 0;
+    font-size: 14px;
+}
+.userBox .userInfo p.userTitle {
+    width: 300px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.userInfo p.uInfo-list span {
+    display: inline-block;
+    width: 50px;
+}
+
+.userDeeds .deedsTitle {
+    width: 500px;
+    height: 50px;
+    margin-bottom: 10px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: bolder;
+    border-bottom: 1px solid #a9a9a9;
+}
+
+.userDeeds .deedsList {
+    width: 500px;
+    height: 30px;
+    color: #6a6a6a;
+    line-height: 30px;
+}
+
+
+.rightInfo.introduction {
+    height: 584px;
+    border: none;
+    padding-top: 60px;
+    background: url("../img/icon_bg_all.png") no-repeat;
+    background-size: cover;
+}
+.rightInfo.introduction p {
+    width: 230px;
+    min-height: 30px;
+    line-height: 30px;
+    padding-left: 30px;
+}
+.rightInfo.introduction p.intr-title {
+    font-weight: bold;
+    background: url("../img/icon_point_blue.jpg") no-repeat 15px center;
+}
+.rightInfo.introduction p.intr-info {
+    font-size: 14px;
+    color: #6a6a6a;
+}
+.rightInfo.introduction p.intr-info span {
+    display: inline-block;
+    width: 48px;
+    height: 30px;
+    margin-right: 12px;
+    float: left;
+    overflow: hidden;
+    text-align: justify;
+    text-align-last: justify;
+}
+.rightInfo.introduction p.intr-info span:after {
+    display: inline-block;
+    content: '';
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+}
+
+
+.bootstrap-select,
+.bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]) {
+    width: 86px;
+}
+.btn-group > .btn {
+    width: 86px;
+}
+
+
+/*achievements*/
+.leftInfo .resultBox {
+    width: 692px;
+    height: 580px;
+    margin: 10px 0 50px 10px;
+}
+.resultBox .resultInfo,
+.resultInfo img,
+.resultInfo p {
+    width: 163px;
+}
+.resultBox .resultInfo {
+    height: 138px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+.resultInfo img {
+    height: 100px;
+}
+.resultInfo p {
+    height: 20px;
+    margin: 0;
+    font-size: 12px;
+    line-height: 20px;
+}
+.resultInfo p.infoBottom {
+    color: #b1b1b1;
+    font-size: 10px;
+}
+p.infoBottom .author {
+    display: inline-block;
+    width: 110px;
+    float: left;
+}
+p.infoBottom .zambia {
+    display: inline-block;
+    width: 50px;
+    text-align: right;
+    cursor: pointer;
+    float: right;
+}
+p.infoBottom .zambia i {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+

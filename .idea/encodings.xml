@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/assets/css/nbugs.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/assets/css/personalCenter.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/assets/js/index.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/libs/html5shiv/3.7.2/html5shiv.min.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/libs/respond/1.4.2/respond.min.js" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

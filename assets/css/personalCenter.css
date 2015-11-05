@@ -1,0 +1,151 @@
+
+.tabBox {
+    width: 1000px;
+    min-height: 100px;
+    margin: 0 auto 50px auto;
+}
+.tabBox .tabLeft {
+    width: 286px;
+    height: 616px;
+    border: 1px solid #e5e9ea;
+    float: left;
+}
+.tabLeft .tabToolBar {
+    width: 242px;
+    height: 80px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 80px;
+    border-bottom: 1px dashed #e5e9ea;
+    cursor: pointer;
+}
+.tabLeft .tabToolBar.selected {
+    color: #1d8ede;
+}
+.tabBox .tabList {
+    width: 700px;
+    height: 616px;
+    border: 1px solid #e5e9ea;
+    float: right;
+}
+.tabList .tabTitle {
+    width: 100%;
+    height: 34px;
+    position: relative;
+}
+.tabTitle .titleInfo {
+    display: inline-block;
+    width: 707px;
+    height: 34px;
+    line-height: 28px;
+    background: url("../img/icon_bg_blue_all.png") no-repeat;
+    color: #FFFFFF;
+    font-size: 16px;
+    text-indent: 24px;
+    position: absolute;
+    top: 0;
+    left: -7px;
+}
+.personalInfo .personalList {
+    margin: 20px 0 0 0;
+    padding: 0;
+    width: 100%;
+}
+.personalList > li {
+    width: 600px;
+    height: 40px;
+    margin: 0 50px;
+    float: left;
+}
+.personalList:after,
+.personalList > li:after {
+    content: '';
+    visibility: hidden;
+    height: 0;
+    display: block;
+    clear: both;
+}
+.personalList > li > span {
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 10px;
+    float: left;
+    overflow: hidden;
+    text-align: justify;
+    text-align-last: justify;
+}
+.personalList > li > span:after {
+    display: inline-block;
+    content: '';
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+}
+.personalList > li > label,
+.personalList > li > input {
+    float: left;
+}
+.personalList > li > p {
+    display: inline-block;
+    margin: 0;
+    float: left;
+}
+.personalList > li > select,
+.personalList > li > input,
+.personalList > li > p select {
+    width: 310px;
+    height: 30px;
+    padding: 0 5px;
+    font-size: 14px;
+    margin-top: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(209, 209, 209);
+    /*border: 1px solid rgb(238, 238, 238);*/
+    border-radius: 0;
+}
+.personalList > li > p select {
+    width: 80px;
+}
+.personalList > li > label {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: #b4b4b4;
+    margin: 0 10px 0 0;
+    line-height: 40px;
+    cursor: pointer;
+}
+.personalList > li > label input {
+    margin-right: 4px;
+    border-color: #b4b4b4;
+    position: relative;
+    top: 2px;
+}
+.personalInfo .btn-submit {
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 130px;
+}
+
+
+.bigWd .bootstrap-select,
+.bigWd .bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]) {
+    width: 310px;
+    margin-top: 3px;
+}
+.bigWd .btn-group > .btn {
+    width: 310px;
+}
+
+.bootstrap-select,
+.bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]) {
+    width: 80px;
+    margin-top: 3px;
+}
+.btn-group > .btn {
+    width: 80px;
+}
